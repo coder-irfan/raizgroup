@@ -28,28 +28,6 @@ function Services({ getDirection }) {
       description: t("service3_desc"),
       image: "images/logistics.webp",
     },
-    {
-      id: "4",
-      number: 4,
-      title: t("service4_title"),
-      description: t("service4_desc"),
-      image: "images/download (5) (1).webp",
-    },
-    {
-      id: "5",
-      number: 5,
-      title: t("service5_title"),
-      description: t("service5_desc"),
-      image:
-        "images/Como garantir controle e qualidade em obras_ Dicas essenciais.webp",
-    },
-    {
-      id: "6",
-      number: 6,
-      title: t("service6_title"),
-      description: t("service6_desc"),
-      image: "images/latest-project__item-4.webp",
-    },
   ];
 
   return (
