@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  background-color: #f7f7f7;
+  color: #131314;
+  max-width: 100rem;
+  margin-inline: auto;
+  scroll-margin-top: 100rem;
+  scroll-behavior: smooth;
+}
+
+html[lang="fa"] body,
+html[lang="ps"] body {
+  font-family: "Vazirmatn", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Syne", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Syne", sans-serif;
+}
+
+html[lang="fa"] h1,
+html[lang="fa"] h2,
+html[lang="fa"] h3,
+html[lang="fa"] h4,
+html[lang="fa"] h5,
+html[lang="fa"] h6,
+html[lang="ps"] h1,
+html[lang="ps"] h2,
+html[lang="ps"] h3,
+html[lang="ps"] h4,
+html[lang="ps"] h5,
+html[lang="ps"] h6 {
+  font-family: "IBM Plex Sans Arabic", sans-serif !important;
+}
+
+.hover-link {
+  @apply relative after:absolute after:left-1/2 after:-bottom-1 after:w-0 after:h-[0.185rem] after:bg-colors-secondTextColor after:transition-all
+    after:duration-500 hover:after:left-0 hover:after:w-full;
+}
+
+.active-link::after {
+  width: 100% !important;
+  left: 0 !important;
+}
+
+.button {
+  @apply relative flex items-center justify-center gap-2 
+  px-6 md:px-7 py-2 md:py-2.5 
+  text-sm md:text-base font-medium
+  rounded-full 
+  bg-colors-buttonBg text-colors-textDarkColor
+  overflow-hidden
+  transition-all duration-300 ease-out
+  shadow-md hover:shadow-lg
+  hover:-translate-y-[1.5px]
+  active:translate-y-[1px]
+  active:shadow-sm;
+}
+
+/* Shine effect */
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transform: skewX(-20deg);
+}
+
+.button:hover::before {
+  left: 125%;
+  transition: all 0.7s ease;
+}
+
+.input {
+  @apply py-2 lg:py-2.5 px-2 md:px-4 rounded-lg text-colors-textDarkColor text-sm sm:text-base border-[0.125rem] border-colors-textDarkGray/60
+   focus:outline-none w-full bg-colors-bg placeholder:text-xs md:placeholder:text-sm
+   transition-shadow duration-300;
+}
+
+.media-link {
+  @apply p-2 md:p-2.5 border-2 border-colors-secondTextColor hover:bg-colors-secondTextColor rounded-full transition-all duration-300;
+}
+
+.error {
+  @apply text-xs md:text-sm text-colors-red;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.truck {
+  will-change: transform;
+}
+
+@keyframes drive {
+  0% {
+    transform: translateX(-120px);
+  }
+  100% {
+    transform: translateX(110vw);
+  }
+}
+
+.truck-1 {
+  animation: drive 18s linear infinite;
+}
+
+.truck-2 {
+  animation: drive 25s linear infinite;
+}
+
+.truck-3 {
+  animation: drive 32s linear infinite;
+}
