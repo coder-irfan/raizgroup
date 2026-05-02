@@ -24,7 +24,7 @@ function Location() {
 
         {/* Map */}
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13147.0206717614!2d69.14939054921265!3d34.53443043935536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38d16f0059e8b62d%3A0x6629fe40b9845194!2z2YXYsdqp2LIg2KrYrNin2LHYqtmJINm-2YbYrNi02YrYsQ!5e0!3m2!1sen!2s!4v1773123621448!5m2!1sen!2s"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.8853102889066!2d69.1481339751982!3d34.53113359229324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38d16f20cabb6fcd%3A0xcec2af352d89aae8!2sRaiz%20Paiman%20Construction%20Company!5e0!3m2!1sen!2sro!4v1777699546365!5m2!1sen!2sro"
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
           allowFullScreen
