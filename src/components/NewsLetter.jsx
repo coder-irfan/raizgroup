@@ -12,7 +12,7 @@ function NewsLetter() {
       `Hello, I would like to receive updates from CLIENTNAME.\nEmail: ${email}`,
     );
 
-    const phoneNumber = "93700000000";
+    const phoneNumber = "93799313021";
     const url = `https://wa.me/${phoneNumber}?text=${message}`;
 
     window.open(url, "_blank");

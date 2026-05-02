@@ -32,7 +32,7 @@ function Contact({ getDirection }) {
         `Message: ${data.comments || "-"}`,
     );
 
-    const whatsappURL = `https://wa.me/937000000000?text=${message}`;
+    const whatsappURL = `https://wa.me/93799313021?text=${message}`;
 
     window.open(whatsappURL, "_blank");
 
